@@ -30,6 +30,7 @@ export default context => {
       if (!matchedComponents.length) {
         return reject({ code: 404 })
         console.log('obj');
+        console.log(matchedComponents);
       }
 
       // 对所有匹配的路由组件调用fetchData钩子
