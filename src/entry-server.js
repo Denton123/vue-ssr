@@ -29,6 +29,7 @@ export default context => {
       // 匹配不到路由,执行reject函数,并返回404
       if (!matchedComponents.length) {
         return reject({ code: 404 })
+        console.log('obj');
       }
 
       // 对所有匹配的路由组件调用fetchData钩子
